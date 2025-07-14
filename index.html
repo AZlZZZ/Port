@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzzaWeb - Cyber Developer</title>
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Matrix Rain Background -->
+    <div class="matrix-bg" id="matrix"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="/icons/pirate.png" alt="AzzaWeb Logo" class="logo">
+                <div class="logo-text">
+                    <span class="logo-main">AZZA</span>
+                    <span class="logo-sub">WEB</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class='bx bx-home-alt'></i>
+                    <span>HOME</span>
+                </a>
+                <a href="#services" class="nav-link" data-section="services">
+                    <i class='bx bx-code-alt'></i>
+                    <span>SERVICES</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class='bx bx-user'></i>
+                    <span>ABOUT</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class='bx bx-envelope'></i>
+                    <span>CONTACT</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section active">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">CYBER</span>
+                        <span class="title-line">DEVELOPER</span>
+                    </h1>
+                    <p class="hero-subtitle">Crafting digital experiences with code and creativity</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">Bugs Fixed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="24">0</span>
+                            <span class="stat-label">Hours Awake</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">azza@cyber:~$</div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command">whoami</span>
+                            </div>
+                            <div class="terminal-line output">
+                                <span class="output-text">AzzaWeb - Full Stack Developer</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command typing" id="typing-text"></span>
+                                <span class="cursor">|</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>SCROLL TO EXPLORE</span>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="section-header">
+                <h2 class="section-title">SERVICES</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-service="web">
+                    <div class="card-header">
+                        <i class='bx bx-globe'></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Modern, responsive websites that convert visitors into customers</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">Starting at $500</span>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="service-card" data-service="mobile">
+                    <div class="card-header">
+                        <i class='bx bx-mobile-alt'></i>
+                        <h3>Mobile Apps</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Cross-platform mobile applications for iOS and Android</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">Starting at $800</span>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="service-card" data-service="cyber">
+                    <div class="card-header">
+                        <i class='bx bx-shield-quarter'></i>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Penetration testing and security audits for your applications</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Kali Linux</span>
+                            <span class="tech-tag">Metasploit</span>
+                            <span class="tech-tag">Wireshark</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">Starting at $300</span>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+
+                <div class="service-card" data-service="ai">
+                    <div class="card-header">
+                        <i class='bx bx-brain'></i>
+                        <h3>AI Solutions</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Custom AI and machine learning solutions for your business</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenAI</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">Starting at $1000</span>
+                        <button class="card-btn">Learn More</button>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2 class="section-title">ABOUT ME</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Digital Craftsman & Code Warrior</h3>
+                    <p>I'm a passionate developer who lives and breathes code. When I'm not debugging at 3 AM or
+                        exploring the latest cybersecurity threats, you'll find me crafting digital experiences that
+                        push the boundaries of what's possible on the web.</p>
+
+                    <div class="skills-container">
+                        <h4>Skills Matrix</h4>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <span class="skill-name">Frontend</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-percent="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">Backend</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-percent="85"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">Cybersecurity</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-percent="75"></div>
+                                </div>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <span class="skill-name">AI/ML</span>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-percent="70"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="hologram-container">
+                        <div class="hologram">
+                            <div class="hologram-layer layer-1"></div>
+                            <div class="hologram-layer layer-2"></div>
+                            <div class="hologram-layer layer-3"></div>
+                            <div class="hologram-core"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2 class="section-title">GET IN TOUCH</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>azza@cyberweb.dev</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) HACK-CODE</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Digital Realm, Cyber Space</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form class="cyber-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>SEND MESSAGE</span>
+                            <i class='bx bx-send'></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/icons/pirate.png" alt="AzzaWeb" class="footer-logo-img">
+                <span>AZZAWEB</span>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link"><i class='bx bxl-github'></i></a>
+                <a href="#" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AzzaWeb. All rights reserved. | Built with ❤️ and ☕</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
